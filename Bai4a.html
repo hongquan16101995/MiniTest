@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="number1"></label>
+<label><input type="button" value="ClickMe" onclick="display()"></label>
+<p id="result"></p>
+<script>
+    function display() {
+        let canh = document.getElementById("number1").value
+        let chuVi = canh * 4
+        let dienTich = canh * canh
+        document.getElementById("result").innerHTML = "Chu vi hình vuông là: " + chuVi + "m; diện tích hình vuông là: " + dienTich + "m2"
+    }
+</script>
+</body>
+</html>

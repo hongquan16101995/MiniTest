@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="number1"></label>
+<label><input type="button" value="ClickMe" onclick="display()"></label>
+<p id="result"></p>
+<script>
+    function display() {
+        let year = document.getElementById("number1").value
+        let theKy = parseInt(year / 100 + 1)
+        document.getElementById("result").innerHTML = "Thế kỷ của " + year + " là: " + theKy
+    }
+</script>
+</body>
+</html>

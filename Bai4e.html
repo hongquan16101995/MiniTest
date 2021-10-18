@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="number1"></label>
+<label><input type="button" value="ClickMe" onclick="display()"></label>
+<p id="result"></p>
+<script>
+    function display() {
+        let  year = document.getElementById("number1").value
+        if (year % 4 === 0) {
+            if (year % 100 === 0) {
+                if (year % 400 === 0) {
+                    document.getElementById("result").innerHTML = "Tháng 2 có 29 ngày"
+                } else {
+                    document.getElementById("result").innerHTML = "Tháng 2 có 28 ngày"
+                }
+            } else {
+                document.getElementById("result").innerHTML = "Tháng 2 có 29 ngày"
+            }
+        } else {
+            document.getElementById("result").innerHTML = "Tháng 2 có 28 ngày"
+        }
+    }
+</script>
+</body>
+</html>
